@@ -5,6 +5,8 @@ An app to help you stay connected  with family and friends in a Pandemic World
 *HTML
 *CSS
 *JAVASCRIPT
-##WEBSITE
-##CONTRIBUTION
+
+## WEBSITE
+
+## CONTRIBUTION
 Made by [melvin, Diana, and Cristian]
