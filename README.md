@@ -5,6 +5,11 @@ An app to help you stay connected  with family and friends in a Pandemic World
 *HTML
 *CSS
 *JAVASCRIPT
+*NODE.JS
+*EXPRESS.JS
+*MYSQL
+*SEQUELIZE
+*HANDLEBARS.JS
 
 ## WEBSITE 
 
