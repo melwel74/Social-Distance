@@ -1,0 +1,25 @@
+
+*{
+    margin: 0; padding: 0px; box-sizing: border-box;}
+body{
+   /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#ffb76b+0,ffa73d+24,ffa73d+24,ffa73d+26,ff7c00+78,ff7f04+84 */
+    text-align: center;
+    font-family: Georgia, verdana,sans-serif;
+    font-size: 24px;
+    padding:20px;
+    }
+header{
+    text-align: center;
+    font-size: 45px;
+    background-color: teal;
+    flex-wrap: wrap;
+    height: 110px;
+    width: 100%;
+    padding: 20;
+    margin: 20;
+    display: inline-block;
+    position: -webkit-sticky; /* for Safari */
+    position: sticky;
+    top: 20;
+    align-self: flex-start; /* <-- this is the fix */
+}
