@@ -23,3 +23,43 @@ header{
     top: 20;
     align-self: flex-start; /* <-- this is the fix */
 }
+
+/* /* button styling */
+button{
+   padding: 10px 20px;
+   border-radius:10px;
+   
+    } 
+ /* blog section styling */
+ .blogs-section{
+     width:100%;
+     padding: 50px 5vw;
+     display:grid;
+     grid-gap:80px;
+ }
+ .blog{
+     width: 70vw;
+     min-width:400px;
+     height: 100px;
+     display: block;
+     margin: auto;
+     padding: 50px 0;
+ }
+ textarea::webkit-scrollbar{
+     width:10px;
+ }
+ textarea::-webkit-scrollbar-thumb{
+    border-radius:10px;
+ }
+
+ .title{
+     width:100%;
+     min-height: 100px;
+     height: auto;
+     outline: none;
+     font-size: 50px;
+     font-weight: 600;
+     color:gray;
+     padding:10px;
+     border-radius:10px;
+ }
