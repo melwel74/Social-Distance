@@ -67,6 +67,8 @@ button{
      color:gray;
  }
  .article{
+     position:relative;
+     left:50px;
      height:500px;
      font-size: 20px;
      margin-top: 20px;
@@ -76,17 +78,18 @@ button{
      white-space: pre-wrap;
  }
  .blog-options{
-     position:fixed;
-     top:25%;
-     right:10px;
-     width: 100%;
+     position:absolute;
+     top:30%;
+     right :19px;
+     transform:translate(-25,-25);
+     width: 20%;
      height:60px;
      background: #fff;
      z-index: 9;
      display: flex;
      justify-content:right;
-     align-items:right;
-     font-size: 15px;
+     /* align-items:right;
+     font-size: 15px; */
  }
  .btn{
      border:black;
@@ -99,5 +102,8 @@ button{
      margin: left 20px;
      font-size: 14px;
  }
- 
- 
+ /* textarea{
+     text-transform: full-width;
+     text-align:justify;
+ }
+  */
