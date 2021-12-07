@@ -1,6 +1,6 @@
 # Social-Distance
 ## Purpose
-A social site for shared experiences during COVID lockdowns. Where people post the things that kept you sane during isolation 
+A social site for shared experiences during COVID lockdowns. Where people post the things that kept them sane during isolation 
 
 ## Built with
 *HTML
