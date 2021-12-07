@@ -23,4 +23,4 @@ https://github.com/melwel74/Social-Distance
 
 
 ## CONTRIBUTION
-Made by [melvin, Diana, and Cristian]
+Made by [melvin and  Diana]
