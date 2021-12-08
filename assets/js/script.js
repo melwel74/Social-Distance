@@ -55,9 +55,24 @@ const uploadImage = (uploadFile, uploadType) =>{
     if(file && file.type.includes("image")){
         const formdata = new FormData();
         formdata.append('image', file);
-    }
+        
+        fetch('/upload', {
+            method:'post',
+            body:formdata
+        }).then(res=>res.json())
+.then(data =>{
+      bannerPath = '${location.origin}/${data}';
+      banner.style.backgroundImage = 'url("${bannerPath}")';
+   }) 
+  }
 }
 
+const addImage = (imagepath,alt)=>{
+    let curPos =articleField.selectionStart;
+    let textToInsert ='\r![${alt}](${imagepath})\r';
+    articleField.value =articleField.value.slice(0,curPos) +textToInsert +
+     articleField.value.slice()
+}
 
 
 
