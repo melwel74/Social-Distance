@@ -3,23 +3,30 @@
     <head>
         <meta charset = "UTF-8"/>
         <meta name = "viewport" content = "width=device-width, initial-scale=1.0"/>
-        <link rel ="stylesheet" href="./assets/css/style.css">
+
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel ="stylesheet" href="./assets/css/styles.css">
         <title>Social Distance</title>
     </head>
     <body>
-
-        <section>
            <header>
+               <ul> 
                <h1>Social Distance<h1>
-            </h1>
+                <li><a class="fa fa-home" class= "active" href="#home"></a></li>
+            </ul>
            </header>
+            <section>
            <!-- blog post -->
-                 <div class = "blog">
+                 <div style="margin-left:25%;padding:1px 16px;height:1000px;" class = "blog">
+
                      <textarea id ="text" class ="title" placeholder ="blog title..."></textarea>
                      <textarea type ="text" class ="article" placeholder ="Start Writing..."></textarea>
                  </div>
                  <!-- button -->
+
                  <div class = "blog-options">
+
                  <button class ="btn dark publish-btn">Publish</button>
                  <!-- upload an image -->
                  <input type ="file" accpet = "image/*" id ="image-upload"hidden>
@@ -31,4 +38,6 @@
             <script type = "text/javascript" src="./assets/js/script.js">
             </script>
         </body>
+
 </html>
+

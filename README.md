@@ -1,8 +1,28 @@
 # Social-Distance
 
-##Table of Contents
--------------------
+## Purpose
+An app to help you stay connected  with family and friends in a Pandemic World
+## Built with
+*HTML
 
-## ITRODUCTION
---------------
-social something like Instagram or Facebook
+*CSS
+
+*JAVASCRIPT
+
+*NODE.JS
+
+*EXPRESS.JS
+
+*MYSQL
+
+*SEQUELIZE
+
+*HANDLEBARS.JS
+
+## WEBSITE 
+https://github.com/melwel74/Social-Distance
+
+
+## CONTRIBUTION
+Made by [melvin, Diana, and Cristian]
+
