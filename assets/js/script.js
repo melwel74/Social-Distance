@@ -1,47 +1,47 @@
-const express = require('express');
-const path = require('path');
-const fileupload = require('express-fileupload');
+// const express = require('express');
+// const path = require('path');
+// const fileupload = require('express-fileupload');
+//stuff in the server
+// const exphbs = require('express-handlebars');
+// const hbs = exphbs.create({});
+// const path = require('path')
 
-let initial_path = path.join(__dirname, "public");
-
-const app = express();
-app.use(express.static(initial_path));
-app.use(fileupload());
+// const app = express();
+// app.use(express.static(initial_path));
+// app.use(fileupload());
 
 app.get('/',(req,res)=>{
     res.sendFile(path.join(initial_path,"index.html"));
 })
-app.get('/editor', (req,res)=>{
-  res.sendFile(path.join(initial_path,"index.html"));
-})
+
 //upload link
-app.post('/upload', (req, res)=>{
-    let file= req.file.image;
-    let date = new Date();
-    // image name
-    let imagename = date.getDate() + date.getTime() + file.name;
-    //image upload path 
-    let path = 'public/uploads/' + imagename;
-    //create upload
-    file.mv(path,(err,result)=>{
-        if(err){
-            throw err;
-        }else{
-            //our image upload path
-            res.json('uploads/${imagename}')
-        }
-    })
-})
+// app.post('/upload', (req, res)=>{
+//     let file= req.file.image;
+//     let date = new Date();
+//     // image name
+//     let imagename = date.getDate() + date.getTime() + file.name;
+//     //image upload path 
+//     let path = 'public/uploads/' + imagename;
+//     //create upload
+//     file.mv(path,(err,result)=>{
+//         if(err){
+//             throw err;
+//         }else{
+//             //our image upload path
+//             res.json('uploads/${imagename}')
+//         }
+//     })
+// })
 // ser/js
-app.get("/:blog",(req,res) =>{
-    res.sendFile(path.join(initial_path, "blog.html"));
-})
-app.use((req,res)=>{
-    res.json("404");
-})
-app.listen("3000",()=>{
-    console.log('listening.....');
-})
+// app.get("/:blog",(req,res) =>{
+//     res.sendFile(path.join(initial_path, "blog.html"));
+// })
+// app.use((req,res)=>{
+//     res.json("404");
+// })
+// app.listen("3000",()=>{
+//     console.log('listening.....');
+// })
 //naming constants move to the begin and eDJs
 const blogTitleField = document.querySelector('.title');
 const articleField = document.querySelector('.article');
@@ -49,7 +49,7 @@ const articleField = document.querySelector('.article');
 //banner eD
 const bannerImage = document.querySelector('.title');
 const banner = document.querySelector(".banner");
-let bannerPath;
+var bannerPath;
 
 const publishBtn = document.querySelector('.publish-btn');
 const uploadInput = document.querySelector('#image-upload');
@@ -100,7 +100,7 @@ publishBtn.addEventListener('click',() =>{
         let docName = '${blogTitle}-${id}';
         let date = new Date(); //for published at info
 
-        // acess firstore with db variable;
+        // acess fs with db variable;
         db.collection("blogs").doc(docName).set({
             title:blogTitleField.value,
             article:articleField.value,
@@ -116,7 +116,8 @@ publishBtn.addEventListener('click',() =>{
     }
 }
 // bgjs
-let blogId =decodeURI(location.pathname.split("/").pop());
+
+let blogId =decodeURI(location.pathname.split("/").pop())
 
 let docRef=  db.collection("blogs").doc(blogId);
 
@@ -137,9 +138,47 @@ const setupBlog =(data =>{
 
     titleTag.innerHTML += blogTitle.innerHTML = data.titleTag;
     publish.innerHTML += data.publishedAt;
+
     const article = document.querySelector('.article');
     addArticle(article,data.article);
 }
+const addArticle = (ele, data) =>{
+   data =data.split("\n").filter(item =>item.length);
+   //console.log(data)
+   console.log(data);
+   data.forEach(item =>{
+       //check for heading
+       if(item[0]=='#'){
+           let hCount = 0;
+           let i = 0;
+           while(item[i]=='#'){
+               hCount++;
+               i++;
+           }
+           let tag = 'h${hCount}';
+           ele.innerHTML+='<${tag}>${item.slice(hCount,item.length)}</${tag}'
+       }     
+       //checking for image format
+    //    else if(item[0]=="!" && item[1]==="["){
+    //        let seperator;
+    //        for (let i =0; i<item.length;i++){
+    //            if(item[i]=="]" && item[i+1]=="(" && item[item.length -1]==
+    //            ")"){
+    //                seperator = i;
+    //            }
+    //            //extract images "alt" and "src"
+    //            let alt =item.slice(2,seperator);
+    //            let src = item.slice(seperator+2,item.lenght-1);
+    //            ele.innerHTML +=
+    //            <img src = "${src}" alt="${alt}"class="article-image">
+
+    //        }
+       else{
+        ele.innerHTML += '<p>${item}</p>';
+       }
+   })
+}
+
 
 
 
