@@ -32,6 +32,13 @@ app.post('/upload', (req, res)=>{
         }
     })
 })
+// ser/js
+app.get("/:blog",(req,res) =>{
+    res.sendFile(path.join(initial_path, "blog.html"));
+})
+app.use((req,res)=>{
+    res.json("404");
+})
 app.listen("3000",()=>{
     console.log('listening.....');
 })
@@ -101,13 +108,39 @@ publishBtn.addEventListener('click',() =>{
             publishedAt:'${date.getDate()} ${months[date.getMonth()]} ${date.get.getFullYear()}'
         })
         .then(()=> {
-                console.log('date entered');
+               location.href = '/${docName}';
         })
-        .catch((err)=>{
+        .catch((err) =>{
             console.error(err);
         })
     }
 }
+// bgjs
+let blogId =decodeURI(location.pathname.split("/").pop());
+
+let docRef=  db.collection("blogs").doc(blogId);
+
+docRef.get().then((doc) =>{
+    if(doc.exists){
+        setupBlog(doc.data());      
+    }else{
+        location.replace("/");
+    }
+})
+const setupBlog =(data =>{
+    const banner = document.querySelector('.banner');
+    const blogTitle = document.querySelector('.title');
+    const titleTag = document.querySelector('title');
+    const publish = document.querySelector('.published');
+    
+    banner.style.backgroundImage = 'url(${data.bannerImage})';
+
+    titleTag.innerHTML += blogTitle.innerHTML = data.titleTag;
+    publish.innerHTML += data.publishedAt;
+    const article = document.querySelector('.article');
+    addArticle(article,data.article);
+}
+
 
 
 
