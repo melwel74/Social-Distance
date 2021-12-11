@@ -15,7 +15,8 @@ app.use(express.urlencoded({extended:false}))
 
 //new express route
 app.get('/api/social-distance', (req,res) =>{
-    res.json('social-distance');
+    res.json({message:'social-distance'});
+
 })
 app.use(require('./controllers'))
 
