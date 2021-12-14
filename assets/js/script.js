@@ -43,6 +43,8 @@
 //     console.log('listening.....');
 // })
 //naming constants move to the begin and eDJs
+//requirements
+// Your name is required
 const blogTitleField = document.querySelector('.title');
 const articleField = document.querySelector('.article');
 
