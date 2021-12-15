@@ -54,6 +54,22 @@ textarea::webkit-scrollbar {
 textarea::-webkit-scrollbar-thumb {
   border-radius: 10px;
 }
+.blogs-section {
+  margin-top:60px;
+  width:-60;
+  height: calc(100vh -60px);
+  background-size:cover ;
+  display:right;
+  justify-content:right;
+  align-items:right;
+}
+
+.content{
+  text-align: right;
+}
+.p{
+  text-align: right;
+}
 
 .title,
 .article {
