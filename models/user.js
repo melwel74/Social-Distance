@@ -4,4 +4,11 @@ const { post } = require('../configure/connection');
 
 class User extends Model {}
 
-post.init()
+User.init({
+    authorId:{
+      type: DataTypes.INTEGER,
+      allowNull: false,
+      primaryKey: true,
+      autoIncrement: true  
+    }
+})

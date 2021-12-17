@@ -14,14 +14,18 @@ app.use(express.json ())
 app.use(express.urlencoded({extended:false}))
 
 //new express route
-app.get('/api/social-distance', (req,res) =>{
-    res.json('social-distance');
-})
+// 
 app.use(require('./controllers'))
+
+app.get('/api/social-distance', (req,res) =>{
+        res.json('social-distance');
+    })
+
+
 
 
 //make the server listen
 app.listen(3001,() =>{
-    console.log('hello yall!')
+    console.log('hello govnar!')
 }); 
 
