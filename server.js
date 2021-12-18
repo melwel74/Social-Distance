@@ -17,9 +17,7 @@ app.use(express.urlencoded({extended:false}))
 // 
 app.use(require('./controllers'))
 
-app.get('/api/social-distance', (req,res) =>{
-        res.json('social-distance');
-    })
+
 
 
 
