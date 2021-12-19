@@ -160,3 +160,12 @@ const createBlog =(blog) =>{
     `;
 
 }
+//     putdatabaselet firebaseConfig = {
+//     // Enter your firebase credentials
+// };
+
+firebase.initializeApp(socialDistance);
+
+    let db = schema.sql();
+    let db =seeds.sql();
+
