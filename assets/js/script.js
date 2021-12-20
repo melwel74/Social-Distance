@@ -108,12 +108,3 @@ const createBlog = (blog) => {
     </div>
     `;
 }
-
-// Heroku creditionals
-let firebaseConfig = {
-    // Enter your firebase credentials
-};
-
-firebase.initializeApp(firebaseConfig);
-
-let db = firebase.firestore();

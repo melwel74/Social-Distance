@@ -63,14 +63,14 @@ body{
 .heading{
   color: #fff;
   text-transform: capitalize;
-  font-size: 80px;
+  font-size: 100px;
   line-height: 60px;
   margin-bottom: 80px;
 }
 
 .heading .small{
   display: block;
-  font-size: 40px;
+  font-size: 100px;
 }
 
 .heading .no-fill{
@@ -124,7 +124,7 @@ body{
   background-position: center;
 }
 
-/* .banner-upload-btn{
+.banner-upload-btn{
   position: absolute;
   bottom: 20px;
   right: 20px;
@@ -136,7 +136,7 @@ body{
   justify-content: center;
   align-items: center;
   cursor: pointer;
-} */
+}
 
 .banner-upload-btn img{
   width: 20px;
@@ -213,7 +213,7 @@ textarea::-webkit-scrollbar-thumb{
   background: #a5a5a5;
   color: #fff;
   margin-left: 20px;
-  font-size: 14px;
+  font-size: 25px;
 }
 /* end of Editor */
 .blog, .article{
@@ -283,7 +283,7 @@ textarea::-webkit-scrollbar-thumb{
   }
 
   header nav ul li a {
-    font-size: 20px;
+    font-size: 25px;
   }
 
   
