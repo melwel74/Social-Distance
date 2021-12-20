@@ -1,1 +1,6 @@
-C
+CREATE TABLE author(
+    author_id INTEGER AUTO_INCREMENT PRIMARY KEY,
+    name VARCHAR(30) NOT NULL,
+    user_name VARCHAR(30) NOT NULL,
+    pw VARCHAR(30) NOT NULL
+);

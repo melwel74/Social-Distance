@@ -29,6 +29,7 @@ app.get('/api/social-distance', (req,res) =>{
     res.json({message:'social-distance'});
 
 })
+// 
 app.use(require('./controllers'))
 //upload link
 // app.post('upload',(req,res)=>{
@@ -49,8 +50,11 @@ app.use(require('./controllers'))
 //         }
 //     })
 
-// })
-//make the server listen
-app.listen('3001', () => {
-    console.log('listening....')
-});
+app.listen(3001,() =>{
+    console.log('hello govnar!')
+}); 
+
+app.post('/api/social distance',(req, res)=>{
+    console.log(req.body);
+    res.json(req.body);
+})
