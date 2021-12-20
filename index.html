@@ -1,77 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./assets/css/styles.css">
-    <title>Social Distance</title>
 </head>
-
 <body>
-    <header>
-        <ul>
-            <h1>Social Distance<h1>
-                    <li><a class="fa fa-home" class="active" href="#home"></a></li>
 
-                    <!-- button -->
-                    <li>
-                        <a href="#PSHED">Wanna post about your Experience?</a>
-                    </li>
-                    <li><a href="#LoginBtn">Login</a>
-
-                    </li>>
+    <nav class="navbar">
+        <img src="img/logo.png" class="logo" alt="">
+        <ul class="links-container">
+            <li class="link-item"><a href="/" class="link">home</a></li>
+            <li class="link-item"><a href="editor.html" class="link">editor</a></li>
+            
         </ul>
+    </nav>
+    
+    <div class="banner"></div>
+
+    <!-- <div class="blog">
+        <h1 class="title"></h1>
+        <p class="published"><span>published at - </span></p>
+        <div class="article">
+            
+        </div>
+    </div> -->
+    <header class="header">
+        <div class="content">
+            <h1 class="heading">
+                <span class="small">welcome in the world of</span>
+                blog
+                <span class="no-fill">writing</span>
+            </h1>
+            <a href="editor.html" class="btn">write a blog</a>
+        </div>
     </header>
-    <!-- <nav class= "navbar">
-               <img src ="" class ='logo'alt ="">
-               <ul class ="Links-container">
-                   <li class = "Links-item"><a href ="/" class -->
-    <section>
-        <!-- blog section -->
-        <div class="blogs-section">
-            <div class="content">
-                <img src="assets/images/laptop-bed.jpg" class="blog-image"
-                    alt="girl laying down and looking at laptop in bed">
-                <span class="Welcome to the Social distance">
-                    <p class="blog-overview">
-                        This a blog site desined to share your thoughts and feelings about the pandemic
-                        whether it be about using your favorite apps or losing a job.<br> Its to
-                        stay connected to people and know that you are not alone.<br>
-                        Share your Experience with COVID-19
-                    </p>
-                    <a href="/" class="btn dark">read</a>
-                    <div style="margin-left:25%;padding:1px 16px;height:1000px;" class="blog">
 
-                        <textarea id="text" class="title" placeholder="blog title..."></textarea>
-                        <textarea type="text" class="article" placeholder="Start Writing..."></textarea>
-                    </div>
-                    <!-- button -->
-                    <Section id="PSHED">
-                        <div class="blog-options">
-                            <button class="btn dark publish-btn">Post</button>
-                            <!-- upload an image
-                 <input type ="file" accept = "image/*" id ="image-upload"hidden>
-                 <label for ="image-upload" class="btn grey upload-btn">Upload Image</label>
-                        </div>
-                        <Section id="LoginBtn">
-                            <div class="blog-options">
-                                <button class="btn dark publish-btn">Login</button>
-                                <!-- upload an image -->
-                            <input type="file" accept="image/*" id="image-upload" hidden>
-                            <label for="image-upload" class="btn grey upload-btn">Upload Image</label> -->
-                        </div>
+    <h1 class="sub-heading">Read more</h1>
 
-                    </section>
+    <!-- blog section -->
+    <section class="blogs-section">
+        <!-- <div class="blog-card">
+            <img src="img/header.png" class="blog-image" alt="">
+            <h1 class="blog-title">Lorem ipsum dolor sit amet consectetur.</h1>
+            <p class="blog-overview">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt incidunt fugiat quos porro repellat harum. Adipisci tempora corporis rem cum.</p>
+            <a href="/" class="btn dark">read</a>
+        </div> -->
+    </section>
+
+    <script type="text/javascript" src="./assets/js/script.js"></script>
+    <script src="passport-config.js"></script>
 
 
-                    <footer class="footer">
-                    </footer>
-                    <script type="text/javascript" src="./assets/js/script.js">
-                    </script>
+    
+    
 </body>
-
 </html>
