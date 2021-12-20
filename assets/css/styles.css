@@ -1,5 +1,3 @@
-
-
 *{
   margin: 0;
   padding: 0;
@@ -29,12 +27,15 @@ body{
   padding: 0 5vw;
   background: #6080bb;
   z-index: 9;
+  
 }
 /* rgb(144, 150, 209); */
 
 .links-container{
   display: flex;
   list-style: none;
+  font-size: 35px;
+  color:#90B2D8;
 }
 
 .link{
@@ -49,7 +50,7 @@ body{
   margin-top: 60px;
   width: 100%;
   height: calc(100vh - 60px);
-  background: url(../img/header.png);
+  background: url(./as);
   background-size: cover;
   display: flex;
   justify-content: center;
@@ -71,10 +72,11 @@ body{
 .heading .small{
   display: block;
   font-size: 100px;
+  color:#90B2D8;
 }
 
 .heading .no-fill{
-  font-style: italic;
+  color:#90B2D8;
   color: transparent;
   -webkit-text-stroke: 2px #fff;
 }

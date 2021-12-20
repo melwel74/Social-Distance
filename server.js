@@ -17,6 +17,7 @@ app.get('/',(req,res) =>{
 app.get('/Editor',(req,res)=>{
     res.sendFile(path.join(initial_path,"editor.html"));
 })
+app.set('view engine','ejs')
 
 //new express route
 app.get('/api/social-distance', (req,res) =>{
