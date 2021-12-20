@@ -1,7 +1,8 @@
 # Social-Distance
 
 ## Purpose
-An app to help you stay connected  with family and friends in a Pandemic World
+A social site for shared experiences during COVID lockdowns. Where people post the things that kept them sane during isolation 
+
 ## Built with
 *HTML
 
@@ -24,5 +25,5 @@ https://github.com/melwel74/Social-Distance
 
 
 ## CONTRIBUTION
-Made by [melvin and Diana]
 
+Made by [melvin and Diana]
