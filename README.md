@@ -21,12 +21,9 @@ A social site for shared experiences during COVID lockdowns. Where people post t
 
 ## WEBSITE 
 https://github.com/melwel74/Social-Distance
-
+![image](https://user-images.githubusercontent.com/89227917/146712869-acbbf268-5415-4b0b-92bf-ebe535174fa9.png)
 
 ## CONTRIBUTION
-<<<<<<< HEAD
-Made by [Melvin, Diana and Cristian]
-=======
 
 Made by [melvin and Diana]
 >>>>>>> ab6f08d3264031a27ad110ae72e138eb8d095f83
